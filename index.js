@@ -134,7 +134,7 @@ async function getSession() {
 
     let link = responseGetUrl.data.data.link;
 
-    const browser = await puppeteer.launch({ headless: true })
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
     const page = await browser.newPage()
     await page.setRequestInterception(true);
 
