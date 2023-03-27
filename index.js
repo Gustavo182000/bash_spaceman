@@ -5,7 +5,7 @@ require('dotenv').config()
 const bot = new Telegraf(process.env.BOT_KEY, { handlerTimeout: 9_000_000 })
 const idChat = "-1001975387538";
 
-var win = 2;
+var win = 0;
 var loss = 0;
 
 var JSESSIONID = "7KYJZPtFLG0RgZuIRJ5tDyIBQFcrYaR90XFEWyVpzSYre-q_h-td!-1041750275";
